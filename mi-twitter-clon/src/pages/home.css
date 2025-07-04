@@ -1,0 +1,70 @@
+.tweet-form {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  background: #192734;
+  padding: 1rem 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 2px 8px #0003;
+}
+
+.tweet-avatar {
+  width: 40px;
+  height: 40px;
+  background: #1da1f2;
+  color: #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.tweet-input {
+  flex: 1;
+  padding: 0.7rem 1rem;
+  border-radius: 9999px;
+  border: 1px solid #38444d;
+  background: #22303c;
+  color: #d9d9d9;
+  font-size: 1rem;
+  outline: none;
+}
+
+.char-count {
+  color: #8899a6;
+  font-size: 0.9rem;
+  margin-left: auto;
+  align-self: flex-end;
+}
+
+.tweet-btn {
+  background: #1da1f2;
+  color: #fff;
+  border: none;
+  border-radius: 9999px;
+  padding: 0.7rem 1.2rem;
+  font-weight: bold;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background 0.2s;
+}
+
+.tweet-btn:disabled {
+  background: #38444d;
+  cursor: not-allowed;
+}
+
+.tweet-btn:hover:not(:disabled) {
+  background: #1991da;
+}
+
+@media (max-width: 600px) {
+  .tweet-form {
+    flex-direction: column;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+}
